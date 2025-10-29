@@ -1,0 +1,89 @@
+.cars-container {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cars-title {
+	margin-bottom: 16px;
+	font-size: 32px;
+}
+
+.cars-table {
+	width: 70%;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 16px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.05);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+	margin: 16px 0;
+}
+
+.cars-table th {
+	background-color: rgba(0, 0, 0, 0.1);
+	font-weight: 600;
+	padding: 14px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.cars-table td {
+	padding: 12px;
+	text-align: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cars-table tr:last-child td {
+	border-bottom: none;
+}
+
+.cars-table tr:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cars-table tr:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: background-color 0.2s ease;
+}
+
+.action-cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.action-cell button,
+.action-cell a {
+	padding: 6px 10px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+[data-theme="dark"] {
+	.cars-table {
+		border: 2px solid rgba(255, 255, 255, 0.2);
+		background-color: rgba(255, 255, 255, 0.05);
+	}
+
+	.cars-table th {
+		background-color: rgba(255, 255, 255, 0.1);
+		border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.cars-table td {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.cars-table tr:nth-child(even) {
+		background-color: rgba(255, 255, 255, 0.05);
+	}
+
+	.cars-table tr:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+}

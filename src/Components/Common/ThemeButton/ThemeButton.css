@@ -1,0 +1,55 @@
+.theme-switch {
+	position: relative;
+	display: flex;
+	width: 64px;
+	height: 32px;
+}
+
+.theme-toggle-checkbox {
+	display: none;
+}
+
+.theme-toggle-label {
+	position: absolute;
+	cursor: pointer;
+	background-color: var(--bg-light);
+	border-radius: 50px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: var(--shadow-soft);
+}
+
+.theme-toggle-label .sun,
+.theme-toggle-label .moon {
+	width: 32px;
+	height: 32px;
+	position: relative;
+	font-size: 24px;
+	transition: var(--transition-fast);
+	z-index: 1;
+	transform: translateY(-1.5px);
+}
+
+
+[data-theme="light"] {
+	.theme-toggle-label .moon {
+		transform: translateY(-1.5px) translateX(-100%);
+		opacity: 0;
+		z-index: 0;
+	}
+}
+
+[data-theme="dark"] {
+	.theme-toggle-label {
+		background-color: var(--bg-dark);
+	}
+
+	.theme-toggle-label .sun {
+		transform: translateY(-1.5px) translateX(100%);
+		opacity: 0;
+		z-index: 0;
+	}
+}

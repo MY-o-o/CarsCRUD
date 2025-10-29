@@ -1,0 +1,36 @@
+:root {
+  --primary-light: #2563eb;
+  --primary-dark: #1e40af;
+  --bg-light: #f8fafc;
+  --bg-dark: #0f172a;
+  --text-light: #f1f5f9;
+  --text-dark: #1e293b;
+  --card-bg: #ffffff;
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --transition-fast: all 0.3s ease;
+  --transition-slow: all 0.6s ease;
+  --radius-xl: 8px;
+}
+
+body {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+[data-theme="dark"] {
+  body {
+    background: var(--bg-dark);
+    color: var(--text-light);
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}

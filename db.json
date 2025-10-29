@@ -1,0 +1,19 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "name": "Toyota Corolla",
+      "year": 1966
+    },
+    {
+      "id": "2",
+      "name": "Volkswagen Golf",
+      "year": 1974
+    },
+    {
+      "id": "3",
+      "name": "Super Car",
+      "year": 2012
+    }
+  ]
+}

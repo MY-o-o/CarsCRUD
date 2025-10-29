@@ -1,0 +1,25 @@
+.home-container {
+	text-align: center;
+	margin-top: 40px;
+	padding: 40px;
+	height: 100%;
+}
+
+.home-container h2 {
+	font-size: 28px;
+	margin-bottom: 16px;
+}
+
+.home-container p {
+	font-size: 16px;
+	line-height: 1.6;
+	max-width: 640px;
+	margin: 0 auto 16px auto;
+}
+
+.home-actions {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	margin-top: 24px;
+}

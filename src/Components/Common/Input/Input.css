@@ -1,0 +1,42 @@
+.input-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
+}
+
+.input-group label {
+	font-weight: 600;
+	margin-bottom: 6px;
+	color: var(--text-dark);
+}
+
+.input-field {
+	padding: 10px 12px;
+	border: 3px solid #ccc;
+	border-radius: var(--radius-xl);
+	font-size: 16px;
+	background-color: var(--bg-light);
+	color: var(--text-dark);
+	font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+	transition: border 0.2s;
+}
+
+.input-field:focus {
+	border-color: var(--primary-light);
+	outline: none;
+}
+
+[data-theme="dark"] {
+	.input-group label {
+		color: var(--text-light);
+	}
+
+	.input-field {
+		background-color: var(--bg-light);
+		color: var(--text-dark);
+	}
+
+	.input-field:focus {
+		border-color: var(--primary-dark);
+	}
+}
