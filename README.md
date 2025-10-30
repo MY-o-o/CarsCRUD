@@ -1,9 +1,9 @@
-# CarsManager
+# Cars Manager
 
 A simple web app allows you to manage your car database — add, edit, and delete cars in just a few clicks.
 
 ## 🌐 Live Demo
-[View Website](https://my-o-o.github.io/CarsCRUD/)
+[View Website](https://my-o-o.github.io/CarsManager/)
 
 ## ✨ Features
 - Responsive design for desktop and mobile.
@@ -11,4 +11,4 @@ A simple web app allows you to manage your car database — add, edit, and delet
 - The interface is built entirely with React functional components.
 
 ## 📸 Preview
-![CarsCRUD Screenshot](./preview.png)
+![CarsManager Screenshot](./preview.png)
