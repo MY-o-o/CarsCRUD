@@ -1,5 +1,6 @@
 {
-  "name": "exam",
+  "name": "cars_manager",
+  "homepage": "https://my-o-o.github.io/CarsManager/",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -8,10 +9,13 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch db.json --port 3004"
+    "server": "json-server --watch db.json --port 3004",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.12.2",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router": "^7.9.4"
