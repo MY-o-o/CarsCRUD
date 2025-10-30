@@ -1,4 +1,4 @@
-# CarsCRUD
+# CarsManager
 
 A simple web app allows you to manage your car database — add, edit, and delete cars in just a few clicks.
 
